@@ -4,6 +4,7 @@ Here we share the Python code that implements a version of the Order Statistics 
 We presented the results of our work at Global Derivatives 2017 conference and we will soon share on arXiv the related paper.
 This first implementation is very simple and based on functions.
 
-#Update
+##Update##
+
 We published our paper on arXiv. Please find it at
 https://arxiv.org/abs/1803.07021
