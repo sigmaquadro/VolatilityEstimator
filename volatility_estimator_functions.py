@@ -129,8 +129,8 @@ if __name__ == '__main__':
     bandwidth = 200
     ret = np.random.normal(0., th_gauss_vol, array_size)
     
-    idx = random.sample(np.arange(ret.shape[0]), int(ret.shape[0]*jumps_percentage))
-    ret[idx] = np.sign(np.random.normal(0., 1., np.sum(idx)))*jumps_size
+    idx = random.sample(xrange(ret.shape[0]), int(ret.shape[0]*jumps_percentage))
+    ret[idx] = np.sign(np.random.normal(0., 1., len(idx)))*jumps_size
     
     vol = local_volatility(ret, bandwidth)
     plot_local_vol(ret, vol)
